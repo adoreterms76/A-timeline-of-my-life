@@ -1,21 +1,26 @@
-/* General Styles */
+/* General body styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: white; /* White background for the whole page */
+    color: #333; /* Dark text color for readability */
     margin: 0;
     padding: 0;
-    background-color: white; /* White background */
-    color: #333;
 }
 
-/* Header and Footer */
-header, footer {
-    background-color: #0000FF; /* Blue background for header and footer */
-    color: white;
+/* Header Styling */
+header {
+    background-color: #0066cc; /* Blue background */
+    color: white; /* White text */
     padding: 20px;
     text-align: center;
 }
 
-/* Navigation */
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Menu Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -29,158 +34,108 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-nav ul li a:hover {
-    color: #FFD700; /* Hover color for navigation links */
+/* Welcome Section */
+#welcome {
+    text-align: center;
+    margin-top: 50px;
 }
 
-/* Button Styles */
+#welcome h2 {
+    font-size: 2.5rem;
+}
+
+#welcome p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
 button {
-    background-color: #800080; /* Purple button background */
+    background-color: #8a2be2; /* Purple button */
     color: white; /* White button text */
-    border: none;
+    font-size: 1.2rem;
     padding: 10px 20px;
-    font-size: 1rem;
+    border: none;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #4B0082; /* Darker purple when hovering */
-}
-
-/* Interest Page Styles */
-#interests {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#interests h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#interests div {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#interests div h3 {
-    font-size: 2rem;
-    color: #333;
-}
-
-#interests div p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-#interests div img {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    border-radius: 10px;
     margin-top: 20px;
-    transition: transform 0.3s ease;
 }
 
-#interests div img:hover {
-    transform: scale(1.1);
-}
-
-/* About Page Styles */
-#about {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#about p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* Favorites Page Styles */
-#favorites {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#favorites h2 {
-    font-size: 2.5rem;
-}
-
-#favorites div {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#favorites div h3 {
-    font-size: 2rem;
-    color: #333;
-}
-
-#favorites div ul {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-#favorites div ul li {
-    list-style-type: square;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #0000FF; /* Blue footer */
+button a {
+    text-decoration: none;
     color: white;
-    padding: 20px;
+}
+
+/* About Me Section */
+#about-me {
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#about-me h2 {
+    font-size: 2rem;
+}
+
+/* Favorite Things Section */
+#my-favorites {
+    padding: 30px;
+    text-align: center;
+}
+
+#my-favorites h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#favorite-movie, #favorite-travel {
+    margin-bottom: 30px;
+}
+
+#favorite-movie img, #favorite-travel img {
+    width: 80%; /* Adjust the size of the images */
+    max-width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0066cc; /* Blue background */
+    color: white; /* White text */
+    padding: 10px;
     text-align: center;
 }
 
 footer p {
     margin: 0;
+    font-size: 1rem;
 }
 
-/* Mobile Responsiveness */
+/* Make the button and navigation links responsive */
 @media screen and (max-width: 768px) {
-    nav ul {
-        text-align: center;
+    header h1 {
+        font-size: 1.8rem;
     }
 
     nav ul li {
         display: block;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
 
-    #interests div, #favorites div {
+    button {
+        width: 100%;
+        font-size: 1.5rem;
         padding: 15px;
     }
 
-    #interests h2, #favorites h2 {
-        font-size: 2rem;
+    #about-me p {
+        font-size: 1.1rem;
     }
 
-    #interests div img, #favorites div img {
-        max-width: 100%;
+    #favorite-movie img, #favorite-travel img {
+        width: 100%;
     }
 }
-
-
-
-  
-   
-
-    
