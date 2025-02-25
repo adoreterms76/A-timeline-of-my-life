@@ -34,6 +34,46 @@ button {
 button:hover {
   background-color: #ff9f00; /* Slightly darker yellow on hover */
 }
+#interests {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#interests h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#interests div {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#interests div h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#interests div p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#interests div img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+#interests div img:hover {
+    transform: scale(1.1);
+}
 
 
 
