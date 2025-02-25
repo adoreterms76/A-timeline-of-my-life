@@ -1,61 +1,40 @@
+/* Background */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #add8e6; /* Baby Blue */
+  background: linear-gradient(to right, #ff6b6b, #1e90ff); /* Coral Red to Sky Blue */
+  font-family: Arial, sans-serif;
 }
 
-header, footer {
-    background-color: #ffb6c1; /* Baby Pink */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+/* Header */
+header {
+  background-color: #1e90ff; /* Sky Blue */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-#intro {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#intro h1 {
-    font-size: 3rem;
-    color: #333;
-}
-
-.button {
-    background-color: #007bff; /* Bright Blue */
-    color: white; /* White Text */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.button:hover {
-    background-color: #0056b3; /* Darker Blue on Hover */
-}
-
+/* Footer */
 footer {
-    padding: 10px;
-    position: relative;
-    width: 100%;
+  background-color: #2f3542; /* Dark Charcoal */
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
+
+/* Button */
+button {
+  background-color: #ffcc00; /* Neon Yellow */
+  color: #ffffff; /* White Text */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ff9f00; /* Slightly darker yellow on hover */
+}
+
+
+
+    
