@@ -1,141 +1,119 @@
-/* General body styling */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: white; /* White background for the whole page */
-    color: #333; /* Dark text color for readability */
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
 }
 
-/* Header Styling */
-header {
-    background-color: #0066cc; /* Blue background */
-    color: white; /* White text */
-    padding: 20px;
-    text-align: center;
+header, footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-/* Navigation Menu Styling */
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-/* Welcome Section */
-#welcome {
-    text-align: center;
-    margin-top: 50px;
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-#welcome h2 {
-    font-size: 2.5rem;
-}
-
-#welcome p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
+/* Buttons */
 button {
-    background-color: #8a2be2; /* Purple button */
-    color: white; /* White button text */
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-button a {
-    text-decoration: none;
-    color: white;
+button:hover {
+  background-color: darkviolet;
 }
 
-/* About Me Section */
-#about-me {
-    padding: 30px;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.6;
+/* About Page */
+#about img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%; /* Medium-sized */
+  height: auto;
+  border-radius: 10px;
 }
 
-#about-me h2 {
-    font-size: 2rem;
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Favorite Things Section */
-#my-favorites {
-    padding: 30px;
-    text-align: center;
+.career, .fun-facts {
+  width: 48%;
 }
 
-#my-favorites h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.personal-info, .contact-info {
+  background-color: #f3f3f3;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-#favorite-movie, #favorite-travel {
-    margin-bottom: 30px;
+.personal-info h3, .contact-info h3 {
+  text-decoration: underline;
 }
 
-#favorite-movie img, #favorite-travel img {
-    width: 80%; /* Adjust the size of the images */
-    max-width: 500px;
-    height: auto;
-    margin-top: 10px;
+/* Interests Page */
+.interest-section {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #0066cc; /* Blue background */
-    color: white; /* White text */
-    padding: 10px;
-    text-align: center;
+.interest-section img {
+  max-width: 50%; /* Smaller images */
+  height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1rem;
+/* Favorites Page */
+.favorite-item {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Make the button and navigation links responsive */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
+.favorite-item img {
+  max-width: 50%; /* Smaller images */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
 
-    button {
-        width: 100%;
-        font-size: 1.5rem;
-        padding: 15px;
-    }
-
-    #about-me p {
-        font-size: 1.1rem;
-    }
-
-    #favorite-movie img, #favorite-travel img {
-        width: 100%;
-    }
+  .career, .fun-facts {
+    width: 100%;
+  }
 }
