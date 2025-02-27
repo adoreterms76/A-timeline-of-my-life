@@ -10,7 +10,7 @@ body {
 /* Header and Footer */
 header, footer {
     background-color: blue;
-    color: white;
+    color: light blur;
     padding: 15px 0;
     text-align: center;
 }
@@ -18,7 +18,7 @@ header, footer {
 /* Buttons */
 button {
     background-color: purple;
-    color: white;
+    color: purple;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -32,7 +32,7 @@ button:hover {
 
 /* About Page */
 .about-container {
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-align: center;
 }
@@ -41,7 +41,7 @@ button:hover {
 .about-container img {
     display: block;
     margin: 0 auto;
-    width: 200px;  /* Small and responsive */
+    width: 50px;  /* Small and responsive */
     height: auto;
     border-radius: 10px;
 }
@@ -55,12 +55,12 @@ button:hover {
 }
 
 .career, .fun-facts {
-    width: 48%;
+    width: 50%;
 }
 
 /* Personal Info & Contact Neatly Styled */
 .personal-info, .contact-info {
-    background-color: #f0f0f0;
+    background-color: nude;
     padding: 10px;
     border-radius: 5px;
     margin-top: 20px;
@@ -73,7 +73,7 @@ button:hover {
 
 /* Interests Page */
 .interests-container {
-    width: 80%;
+    width: 50%;
     margin: auto;
 }
 
@@ -85,7 +85,7 @@ button:hover {
 }
 
 .interests-item img {
-    width: 150px;  /* Small images */
+    width: 50px;  /* Small images */
     height: auto;
     margin-right: 15px;
     border-radius: 10px;
@@ -93,7 +93,7 @@ button:hover {
 
 /* Favorites Page */
 .favorites-container {
-    width: 80%;
+    width: 50%;
     margin: auto;
 }
 
@@ -102,7 +102,7 @@ button:hover {
 }
 
 .favorite-item img {
-    width: 200px;  /* Small and well aligned */
+    width: 50px;  /* Small and well aligned */
     height: auto;
     display: block;
     margin: 10px auto;
@@ -110,14 +110,14 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 50px) {
     .about-info {
         flex-direction: column;
         text-align: center;
     }
 
     .career, .fun-facts {
-        width: 100%;
+        width: 50%;
         margin-bottom: 15px;
     }
 
