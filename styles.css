@@ -11,28 +11,28 @@ body {
 header {
     background-color: #D8BFD8; /* Light Purple */
     color: white;
-    padding: 15px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 24px;
 }
 
 /* Footer */
 footer {
     background-color: #D8BFD8; /* Light Purple */
     color: white;
-    padding: 15px;
+    padding: 10px;
     position: relative;
     bottom: 0;
-    width: 40%;
+    width: 100%;
 }
 
 /* Button Styles */
 .explore-btn {
     background-color: #ADD8E6; /* Light Blue */
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 20px;
 }
 
@@ -42,19 +42,19 @@ footer {
 
 /* Home Page */
 .welcome-section img {
-    width: 40%;
-    max-width: 80px;
+    width: 60%;
+    max-width: 600px;
     height: auto;
     margin-top: 20px;
 }
 
 /* About Page */
 .about img {
-    width: 40px;
+    width: 150px;
     height: auto;
-    border-radius: 30%;
+    border-radius: 50%;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
 }
 
 .bio {
@@ -73,14 +73,14 @@ footer {
 .about-section {
     flex: 1;
     padding: 10px;
-    min-width: 40px;
+    min-width: 300px;
 }
 
 /* Personal Info and Contact */
 .personal-info {
     text-align: left;
     margin: auto;
-    max-width: 40px;
+    max-width: 400px;
     background-color: #f0f0f0;
     padding: 10px;
     border-radius: 8px;
@@ -95,7 +95,7 @@ footer {
 }
 
 .interest {
-    width: 40%;
+    width: 45%;
     margin: 10px;
     background-color: #f9f9f9;
     padding: 15px;
@@ -103,8 +103,8 @@ footer {
 }
 
 .interest img {
-    width: 40%;
-    max-width: 80px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     display: block;
     margin: 10px auto;
@@ -119,7 +119,7 @@ footer {
 }
 
 .favorite-item {
-    width: 40%;
+    width: 45%;
     margin: 10px;
     background-color: #f9f9f9;
     padding: 15px;
