@@ -1,28 +1,27 @@
-/* General Page Styling */
+/* General Styles */
 body {
-    background-color: white;
+    background-color: light pink;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /* Header and Footer */
 header, footer {
     background-color: blue;
-    color: light blur;
-    padding: 15px 0;
+    color: white;
     text-align: center;
+    padding: 15px 0;
 }
 
 /* Buttons */
 button {
     background-color: purple;
     color: purple;
-    border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
+    font-size: 16px;
     border-radius: 5px;
 }
 
@@ -32,104 +31,58 @@ button:hover {
 
 /* About Page */
 .about-container {
-    width: 50%;
-    margin: auto;
     text-align: center;
+    padding: 20px;
 }
 
-/* Center and Resize Image */
 .about-container img {
     display: block;
     margin: 0 auto;
-    width: 50px;  /* Small and responsive */
+    width: 50px; /* Small and responsive */
     height: auto;
-    border-radius: 10px;
+    border-radius: 25%;
 }
 
-/* Career Aspirations and Fun Facts Side by Side */
-.about-info {
+/* Career Aspirations & Fun Facts */
+.about-section {
     display: flex;
-    justify-content: space-between;
-    text-align: left;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
-.career, .fun-facts {
+.about-section div {
     width: 50%;
 }
 
-/* Personal Info & Contact Neatly Styled */
-.personal-info, .contact-info {
-    background-color: nude;
+/* Personal Info & Contact */
+.personal-info, .contact {
+    text-align: center;
+    margin-top: 20px;
     padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-align: left;
 }
 
-.personal-info p, .contact-info p {
-    margin: 5px 0;
+/* Interests & Favorites */
+.interests-container, .favorites-container {
+    text-align: center;
+    padding: 20px;
 }
 
-/* Interests Page */
-.interests-container {
-    width: 50%;
-    margin: auto;
-}
-
-.interests-item {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.interests-item img {
-    width: 50px;  /* Small images */
+.interests-container img, .favorites-container img {
+    width: 50px; /* Smaller images */
     height: auto;
-    margin-right: 15px;
+    margin: 10px;
     border-radius: 10px;
 }
 
-/* Favorites Page */
-.favorites-container {
-    width: 50%;
-    margin: auto;
-}
-
-.favorite-item {
-    margin-bottom: 20px;
-}
-
-.favorite-item img {
-    width: 50px;  /* Small and well aligned */
-    height: auto;
-    display: block;
-    margin: 10px auto;
+/* Sections */
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
-@media (max-width: 50px) {
-    .about-info {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .career, .fun-facts {
-        width: 50%;
-        margin-bottom: 15px;
-    }
-
-    .interests-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .interests-item img {
-        margin: 0 auto 10px auto;
-    }
+h1, h2 {
+    color: black;
 }
-
-
-  
